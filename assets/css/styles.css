@@ -1,3 +1,41 @@
-h1 {
-    color: red;
- }
+/* s'applique a toute la page avec le signe asterix */
+*{
+}
+
+body{
+    margin: 0 auto;
+}
+/* header */
+
+header.header {
+    display: flex;
+    align-items: center;
+    background-color: green;
+}
+/* taille du logo */
+header.header img {
+    width: 150px;
+}
+/* style pour le backgrounf de l entete */
+section.toppage {
+    background: url("../../images/background.jpg");
+    background-size: cover;
+    height: 80vh;
+}
+
+/* menu de navigation */
+
+nav.nav {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    background-color: yellow;
+    width: 400px;
+    margin-left: 30px;
+}
+
+nav.nav li{
+    color: white;
+}
+
+
