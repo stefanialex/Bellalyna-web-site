@@ -8,22 +8,28 @@
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-  <nav>
-    <h1>BellaLyna</h1>
-      <div class="onglets">
-        <a href="#">Accueil</a>
-        <a href="#">Galerie</a>
-        <a href="#">Bons Plans</a>
-        <a href="#">Prendre RDV</a>
-        <a href="#">Me contacter</a>
+  <nav class="navbar light-mode" role="navigation">
+    <div class="navbar_logo"><h1>BellaLyna</h1></div>
+      <ul class="navbar_links">
+        <li class="navbar_link first"><a href="#">Accueil</a></li>
+        <li class="navbar_link second"><a href="#">Galerie</a></li>
+        <li class="navbar_link third"><a href="#">Bons Plans</a></li>
+        <li class="navbar_link four"><a href="#">Prendre RDV</a></li>
+        <li class="navbar_link fifth"><a href="#">Me contacter</a></li>
+       </ul>
+       <button class="burger">
+         <span class="bar"></span>
+       </button> 
       </div>
   </nav>
   <header>
+
+  </header>
+  <section class="titles">
     <h2>BellaLyna</h2>
     <h4>BellaLyna, une qualité qui saute aux yeux</h4>
-    <button id="rdv">Prendre RDV</button>
-  </header>
-  <section class="main">
+  </section>
+  <section class="main">  
     <div class="bulle1">
       <img src="images/gallery.jpg" alt="nail art">
     </div>
@@ -64,6 +70,8 @@
 
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="assets/script.js"></script>
 
-</body>
+
+  </body>
 </html>
