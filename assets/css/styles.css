@@ -74,7 +74,7 @@ header {
 
 header::after {
     content: "";
-    background-image: url(/images/background-paon.png);
+    background-image: url(/images/background_paon.png);
     background-size: cover;
     opacity: 0.5;
     top: 0;
