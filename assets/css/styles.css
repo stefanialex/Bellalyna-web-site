@@ -278,6 +278,7 @@ section.main {
     flex-wrap: wrap;
     justify-content: space-around;
     color: var(--main-text-color);
+    padding-top: 50px;
     padding-bottom: 150px; 
 
 }
