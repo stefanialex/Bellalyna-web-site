@@ -48,12 +48,13 @@ body {
 
 /* logo svg with animation */
 svg {
-  width: 160px;
+  width: 170px;
   stroke: var(--second-text-color);
   position: absolute;
   padding-left: 1.5em;
-  top: 7%;
-  left: 15%;
+  margin-left: 0.2em;
+  top: 5%;
+  left: 10%;
   transform: translate(-50%, -50%);
   animation-name: animate;
   animation-duration: 0.8s;
@@ -160,6 +161,20 @@ svg {
       padding-left:2rem;
       letter-spacing:5px;
     }
+    svg {
+      width: 150px;
+      stroke: var(--second-text-color);
+      position: absolute;
+      padding-left: 1.5em;
+      margin-left: 0.2em;
+      top: 10%;
+      left: 35%;
+      transform: translate(-50%, -50%);
+      animation-name: animate;
+      animation-duration: 0.8s;
+      animation-direction: alternate;
+      animation-iteration-count: infinite;    
+    }
     
     /* Toggle menu */
     .burger {
@@ -241,33 +256,21 @@ svg {
     }
   }
 
-h2 {
-    font-family: var(--main-font-family);
+  section.titles h1, h2 {
+    font-family:var(--second-text-color);
     font-size: 1.5em;
     padding: 10px;
-    color: var(--main-text-color);
-}
-
-h4 {
-    margin-top: -20px;
-    font-size: 1em;
-    text-align: center;
-    padding: 45px;
-    color: var(--main-text-color);
+    color: var(--main-bg-color);
 }
 
 
 section.titles {
     width: 100%;
+    height: 150px;
     background-image: url(/images/background_paon.png);
     background-size: cover;
-    opacity: 1;
-    padding: 10px 10px 10px 10px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    color: var(--main-text-color);
-   
+    padding: 20px 20px 20px 20px;
+    display: flex;  
 
 }
 section.main {
