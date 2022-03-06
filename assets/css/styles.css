@@ -46,6 +46,10 @@ body {
     min-height: 100vh;  
 }
 
+header {
+  width: 100%;
+}
+
 /* logo svg with animation */
 svg {
   width: 170px;
@@ -94,17 +98,6 @@ svg {
   .navbar_links { 
     display: flex;
   }
-/*  
-  a:after {
-    content: "";
-    position: absolute;
-    background-color: #ff3c78;
-    height: 3px;
-    width: 100%;
-    left: 0;
-    bottom: -10px;
-  }
-*/
 
    
   .navbar_link { 
@@ -264,11 +257,9 @@ svg {
 
   section.titles h1, h2 {
     font-family:var(--second-text-color);
-    font-size: 1.5em;
-    padding: 10px;
+  
     color: var(--main-bg-color);
 }
-
 
 section.titles {
     width: 100%;
