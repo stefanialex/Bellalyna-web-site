@@ -373,6 +373,13 @@ picture {
 }
 
 
+/* small device main */
+@media screen and (max-width:1300px) {
+  body { 
+    display: flex;
+    flex-direction: column;
+  }
+
 
 /* Footer */
 
