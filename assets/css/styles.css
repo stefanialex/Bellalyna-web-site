@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montagu+Slab:wght@100&display=swap');
 
 :root {
+  /*----------------------color var---------------*/
     --font-size: 1.5rem;
     --main-bg-color: #FAF8D4;
     --second-bg-color: #EBDCCB;
@@ -9,39 +10,30 @@
     --wave-color: #3586FF;
     --main-text-color: #000;
     --second-text-color: #fff;
+    --clr-primary: #fc307b;
+    --clr-accent: #2c92ef;
+
+
+  /*----------------------text var---------------*/
     --main-font-family: Monoton;
     --second-font-family:Montagu;
-
- /* card color */
-
-    --b1cd: #500033;
-    --b2cd: #000050;
-    --b2cl: #0033ff;
-    --b3cd: #00501d;
-    --b3cl: #00ff44;
-    --b4cd: #554d00;
-    --b4cl: #ff4e00;
-    --b5cd: #300050;
-    --b5cl: #8000ff;
-     /* main var  */
-
-     --clr-primary: #fc307b;
-     --clr-accent: #2c92ef;
-     --fs-700: 3.5rem;
-     --fs-400: 1.25rem;
-  
+    --font-size: 1.5rem;
+    --fs-700: 3.5rem;
+    --fs-400: 1.25rem;
 }
 
-.light-mode {
-    --navbar-color: #222;
-    --navbar-bg-color: #F0F0F0;  
-  }
-.dark-mode {
-    --navbar-color: #FFF;
-    --navbar-bg-color: #000;  
-  }
+  /*---------------theme light or dark---------------*/
 
-/* Reset */
+.light-mode {
+  --navbar-color: #222;
+  --navbar-bg-color: #F0F0F0;  
+}
+.dark-mode {
+  --navbar-color: #FFF;
+  --navbar-bg-color: #000;  
+}
+
+ /*---------------------- reset ---------------*/
 
 * {
     margin: 0;
@@ -53,13 +45,14 @@ ul {
     list-style: none;
 }
 
-/* Base */
+ /*---------------------- base ---------------*/
  
 body {
     font-size: var(--font-size);
 }
 
 /* header for put in affiliate banner link */
+
 header 
 {
   padding-top: 25px;
@@ -71,6 +64,7 @@ header
 }
 
 /* logo svg with animation */
+
 .glossy_logo {
   width: 300px;
   padding-top: 10px;
@@ -102,7 +96,8 @@ header
   }
 }
 
-/* Navbar */
+ /*---------------------- Navbar ---------------*/
+
 .navbar {
   width: 100%;
   height: 50px;  
@@ -117,7 +112,6 @@ header
 .navbar_links { 
   display: flex;
 }
-
  
 .navbar_link { 
   padding:0 10px;
@@ -130,13 +124,14 @@ header
   display:none;
 }
 
-/*  Small device */
+/* navbar Small device */
 @media screen and (max-width:800px) {
   .navbar_links { 
     overflow:hidden;
     display:flex;
     flex-direction:column;
     width:0;
+    z-index: 1; 
     height:calc(100vh - 65px);  
     position:absolute;
     top:65px;
@@ -157,8 +152,10 @@ header
   }
   
   .show-nav .navbar_link  {        
-    transform: translateX(0);    
-  }  
+    transform: translateX(0);
+       
+  } 
+
   
   
   .navbar_link > a {
@@ -174,7 +171,7 @@ header
     letter-spacing:5px;
   }
   .glossy_logo {
-    width: 150px;
+    width: 20em;
     stroke: var(--second-text-color);
     position: absolute;
     padding-left: 1.5em;
