@@ -63,7 +63,7 @@ header
   justify-content: center;
 }
 
-/* logo svg with animation */
+/*logo svg with animation */
 
 .glossy_logo {
   width: 300px;
@@ -127,16 +127,16 @@ header
 /* navbar Small device */
 @media screen and (max-width:800px) {
   .navbar_links { 
-    overflow:hidden;
-    display:flex;
-    flex-direction:column;
-    width:0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    width: 0;
     z-index: 1; 
-    height:calc(100vh - 65px);  
-    position:absolute;
-    top:65px;
-    right:0;     
-    background:var(--navbar-bg-color);     
+    height: calc(100vh - 65px);  
+    position: absolute;
+    top: 65px;
+    right: 0;     
+    background: var(--navbar-bg-color);     
     transform: translateX(110%);
     transition: all .5s ease-in-out;
   }
@@ -267,16 +267,17 @@ header
 
 
 
-/* Main */
+/*-------------------------- Main ---------------------------------- */
 
-/* Make images easier to work with image */
-img,
-picture {
+/* Make images easier to work with  */
+img 
+{
   max-width: 100%;
   display: block;
 }
 
-.main {
+.main 
+{
   background: rgb(2,0,36);
   background: linear-gradient(282deg, rgba(2,0,36,1) 0%, rgba(163,26,144,1) 35%, rgba(0,212,255,1) 100%);
   font-size: var(--fs-400);
@@ -309,32 +310,37 @@ picture {
 }
 
 
-.container {
+.container 
+{
   padding: 0rem 1rem;
   max-width: 80rem;
   margin: 0 auto;
 }
 
 
-.grid {
+.grid 
+{
   display: grid;
   gap: var(--gap, 1rem);
 }
 
-.grid--columns {
+.grid--columns 
+{
   grid-auto-flow: column;
 }
 
 /* featured grid */
 
-.feature-grid-container {
+.feature-grid-container 
+{
   perspective: 100rem;
   position: relative;
 }
 
 
 
-.feature-grid {
+.feature-grid 
+{
   position: relative;
   z-index: -1;
   left: min(calc(1000px - 100vw) * -1, 0px);
@@ -345,20 +351,23 @@ picture {
   transform: rotateY(-40deg);
 }
 
-.feature-grid > a {
+.feature-grid > a 
+{
   border-radius: 0.75em;
   transition: transform 350ms ease-in-out;
   overflow: hidden;
 }
 
 .feature-grid > a:hover,
-.feature-grid > a:focus-visible {
+.feature-grid > a:focus-visible 
+{
   transform: scale(1.1);
   box-shadow: 0 0 1.5rem hsl(0 0% 100% / 0.8);
 }
 
 
 /* small device main training grid to switch */
+
 @media screen and (max-width:1300px) 
 {
   .feature-grid-container 
@@ -370,20 +379,30 @@ picture {
 
   .feature-grid 
   {
-    width: 55rem;
-    align-self: center;
+    position: unset;
     transform: rotateY(0deg);
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
-    width: 80%;  
-    position: unset; 
+    margin: 30px 10px 30px 10px;
+    width: 80%;
+
   }
+  .feature-grid img
+  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+  }
+
 }
 
-/* Footer */
+/*--------------------- Footer ---------------------------*/
 
-footer {
+footer 
+{
     position: relative;
     width: 100%;
     background: var(--wave-color);
@@ -397,7 +416,8 @@ footer {
 }
 
 footer .social_icon,
-footer .menu {
+footer .menu 
+{
     position: relative;
     display: flex;
     justify-content: center;
@@ -408,10 +428,12 @@ footer .menu {
 }
 
 footer .social_icon li,
-footer .menu li {
+footer .menu li 
+{
     list-style-type: none;
 }
-footer .social_icon li a {
+footer .social_icon li a 
+{
     font-size: 2em;
     color: var(--second-text-color);
     margin: 0 10px;
@@ -419,7 +441,8 @@ footer .social_icon li a {
     transition: 0.5s;
 }
 
-footer .menu li a {
+footer .menu li a 
+{
     font-size: 1.2em;
     color: var(--second-text-color);
     margin: 0 10px;
@@ -429,7 +452,8 @@ footer .menu li a {
     opacity: 0.75;
 }
 
-footer .menu li a:hover {
+footer .menu li a:hover 
+{
     opacity: 1;
 
 }
@@ -438,7 +462,8 @@ footer .social_icon li a:hover {
     transform: translateY(-10px);
 }
 
-footer p {
+footer p 
+{
     color: var(--main-text-color);
     text-align: center;
     margin-top: 15px;
@@ -446,7 +471,8 @@ footer p {
     font-size: 1.1em;
 }
 
-footer .wave {
+footer .wave 
+{
     position: absolute;
     top: -100px;
     left: 0;
@@ -458,26 +484,30 @@ footer .wave {
 
      /* waves and animation */
 
-footer .wave#wave1 {
+footer .wave#wave1 
+{
     z-index: 1000;
     opacity: 1;
     bottom: 0;
     animation: animateWave_02 4s linear infinite ;  
 }
-footer .wave#wave2 {
+footer .wave#wave2 
+{
     z-index: 999;
     opacity: 0.5;
     bottom: 0px;
     animation: animateWave 4s linear infinite ;
 }
-footer .wave#wave3 {
+footer .wave#wave3 
+{
     z-index: 1000;
     opacity: 0.2;
     bottom: 15px;
     animation: animateWave 3s linear infinite ;
 
 }
-footer .wave#wave4 {
+footer .wave#wave4 
+{
     z-index: 999;
     opacity: 0.7;
     bottom: 20px;
@@ -509,7 +539,7 @@ footer .wave#wave4 {
     }
 }
 
-/* style form contact me */
+/* ------------------------style form contact me -----------------------*/
 
     #fs-frm input,
     #fs-frm select,
@@ -517,7 +547,8 @@ footer .wave#wave4 {
     #fs-frm fieldset,
     #fs-frm optgroup,
     #fs-frm label,
-    #fs-frm #card-element:disabled {
+    #fs-frm #card-element:disabled 
+    {
       font-family: inherit;
       font-size: 100%;
       color: inherit;
@@ -532,7 +563,8 @@ footer .wave#wave4 {
     }
     #fs-frm label,
     #fs-frm legend,
-    #fs-frm ::placeholder {
+    #fs-frm ::placeholder 
+    {
       font-size: .825rem;
       margin-bottom: .5rem;
       padding-top: .2rem;
@@ -545,7 +577,8 @@ footer .wave#wave4 {
     #fs-frm input,
     #fs-frm select,
     #fs-frm textarea,
-    #fs-frm #card-element {
+    #fs-frm #card-element 
+    {
       border: 1px solid var(--navbar-color);
       border-radius: 5px;
       background-color: black;
@@ -554,7 +587,8 @@ footer .wave#wave4 {
     }
     #fs-frm input:focus,
     #fs-frm select:focus,
-    #fs-frm textarea:focus {
+    #fs-frm textarea:focus 
+    {
       background-color: black;
       outline-style: solid;
       outline-width: thin;
@@ -584,17 +618,21 @@ footer .wave#wave4 {
 
     #fs-frm fieldset.locale input[name="city"],
     #fs-frm fieldset.locale select[name="state"],
-    #fs-frm fieldset.locale input[name="postal-code"] {
+    #fs-frm fieldset.locale input[name="postal-code"] 
+    {
       display: inline;
     }
-    #fs-frm fieldset.locale input[name="city"] {
+    #fs-frm fieldset.locale input[name="city"] 
+    {
       width: 52%;
     }
     #fs-frm fieldset.locale select[name="state"],
-    #fs-frm fieldset.locale input[name="postal-code"] {
+    #fs-frm fieldset.locale input[name="postal-code"] 
+    {
       width: 20%;
     }
     #fs-frm fieldset.locale input[name="city"],
-    #fs-frm fieldset.locale select[name="state"] {
+    #fs-frm fieldset.locale select[name="state"] 
+    {
       margin-right: 3%;
     }
