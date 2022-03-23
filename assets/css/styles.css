@@ -124,15 +124,15 @@ header
   display:none;
 }
 
-/* navbar Small device */
-@media screen and (max-width:800px) {
+/* navbar medium and small device */
+@media screen and (max-width:1015px) {
   .navbar_links { 
     overflow: hidden;
     display: flex;
     flex-direction: column;
     width: 0;
     z-index: 1; 
-    height: calc(100vh - 65px);  
+    height: auto;  
     position: absolute;
     top: 65px;
     right: 0;     
